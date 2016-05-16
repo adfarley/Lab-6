@@ -161,6 +161,9 @@ public class PokerHub extends Hub {
 				System.out.println("Sending Start back to Client");
 				sendToAll(HubGamePlay);
 				break;
+			case Draw:
+				sendToAll(HubPokerTable);
+				break;
 			case Deal:
 
 				break;
