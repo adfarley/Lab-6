@@ -331,7 +331,8 @@ public class PokerTableController {
 	
 	@FXML
 	public void btnDrawCard_Click(ActionEvent event) {
-		
+		Action act = new Action(eAction.Draw, mainApp.getPlayer());
+		mainApp.messageSend(act);
 	}
 
 	private void scanInputControls(Pane parent, String strControlStartsWith, boolean bVisible) {
