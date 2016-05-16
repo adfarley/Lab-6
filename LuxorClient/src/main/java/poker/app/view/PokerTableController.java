@@ -88,6 +88,8 @@ public class PokerTableController {
 	@FXML
 	private Button btnStartGame;
 	@FXML
+	private Button btnDrawCard;
+	@FXML
 	private ToggleButton btnPos1SitLeave;
 	@FXML
 	private ToggleButton btnPos2SitLeave;
@@ -325,6 +327,11 @@ public class PokerTableController {
 		Button btnFold = (Button) event.getSource();
 		Action act = new Action(eAction.Fold, mainApp.getPlayer());
 		mainApp.messageSend(act);
+	}
+	
+	@FXML
+	public void btnDrawCard_Click(ActionEvent event) {
+		
 	}
 
 	private void scanInputControls(Pane parent, String strControlStartsWith, boolean bVisible) {
